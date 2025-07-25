@@ -1,0 +1,125 @@
+/* Variable Declarations */
+:root {
+  --player-bg: rgba(149, 149, 149, 0.138);
+  --player-bar-bg: rgba(126, 126, 126, 0.277);
+  --plus-button: rgb(61, 207, 163, 0.5);
+  --minus-button: rgb(122, 49, 49, 0.5);
+  --border-color: rgb(102, 102, 102);
+  
+
+}
+
+body{
+  background: #020024;
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%,
+                                    rgba(9, 9, 121, 1) 12%,
+                                    rgba(0, 212, 255, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-container{
+  background: #c2c2c2;
+  background: linear-gradient(90deg,rgba(124, 124, 124, 0.5) 0%,
+                                    rgba(232, 232, 232, 0.5) 100%);
+  border-radius: 5px;
+}
+
+.player-bar{
+  background-color: var(--player-bar-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: 5px 0;
+  height: 20vh;
+}
+.player-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30%;
+  background-color: var(--player-bg);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.player-name, .life-total{
+  font-size: 1.5rem;
+  font-family: "Bitcount";
+}
+
+.player-name{
+  width: 35vw;
+}
+.life-total{
+  width: 32vw;
+}
+
+/* Health Adjusting Buttons */
+.plus-button, .minus-button{
+  font-family: "Bitcount";
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding-left: 8px;
+}
+.plus-button{
+  background-color: var(--plus-button);
+}
+.minus-button{
+  background-color: var(--minus-button);
+}
+
+/* Command Damage Elements */
+.commander-damage-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commander-damage{
+  width: 28vw;
+  margin: 0 5px;
+}
+.comm-dmg-button, .comm-dmg-label{
+  display: inline-flex;
+  font-family: "Bitcount";
+}
+
+
+/*  FONT STUFF */
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bitcount-<uniquifier> {
+  font-family: "Bitcount", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
